@@ -1,0 +1,183 @@
+<html>
+<head>
+    <meta name="viewpoint" content="with=device-width, initial scale=1.0">
+    <title>S&K Hotels|Account</title>
+    <link rel="stylesheet" href="account.css">
+    <link href="https://fonts.googleapis.com/css2? family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+</head>
+    
+<body>
+<script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+      document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      document.getElementById("main").style.marginLeft= "0";
+      document.body.style.backgroundColor = "white";
+    }
+
+    function scrolll() {
+          var left = document.querySelector(".scroll-images");
+          left.scrollBy(350, 0)
+      }
+  
+      function scrollr() {
+          var right = document.querySelector(".scroll-images");
+          right.scrollBy(-350, 0)
+      }
+</script>
+
+    <table>
+        <tr>
+          <td>
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+      
+            <div id="mySidenav" class="sidenav">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+              <a href="about_reg.html">About</a>
+              <a href="contact_reg.html">Contact</a>
+              <a href="review_reg.html">Review</a>
+          </div>
+          </td>
+        <th>
+            <div class="a">
+                &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;    
+                <div class="dropdown">
+                <img class="login-image" src="no_user.avif" alt="Dropdown Image">
+                <div class="dropdown-content">
+                    <p>Welcome Sanjana</p>
+                    <hr>                  
+                    <div id="specific-option">Logout</div><br>
+                    <a href="account.html" class="id">Manage account</a>
+            </div>
+        </th>
+        </tr>
+  
+      </table>
+
+    <section class="sub-header">
+        <nav>
+            <a href="index_reg.html"><img src="logo.png"></a>
+            <div class="nav-links" id="NavLinks">
+                <ul>
+                    <li><a href="index_reg.html">Home</a></li>
+                    <li><a href="accomodation_reg.html">Accommodation</a></li>
+                    <li><a href="dining_reg.html">Dining</a></li>
+                    <li><a href="fitness_reg.html">Fitness</a></li>
+                    <li><a href="gallery_reg.html">Gallery</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <h1>Account</h1>
+
+    </section>
+
+    <br><br><br>
+
+    <center>
+    <table>
+        <td><div class="txt"><b>Profile</b></div>
+            <img src="no_user.avif" class="imgprf"></td>
+    <td><form id="registrationForm" onsubmit="return validateForm()">
+        <div class="name">
+            Name: Sanjana
+        </div>
+        <br>
+        <div class="email">
+            Email: trial@gmail.com
+        </div>
+        <div class="user">
+            Username: trial
+        </div>
+        <br>
+        <div class="mobile">
+            Mobile: 123456789
+        </div>
+        <br>
+        <div class="pass">
+            Password: ******
+        </div>
+        <br>
+      
+        <label for="password">Change Password:</label>
+        <input type="password" id="password" name="password" required><br> <br>
+        <button type="submit" class="btn_submit" id = "submit_btn">Save</button>
+        <br><br>
+      </form></td>
+    </table>
+</center>
+    
+
+  <br><br>
+  <section class="footer">
+      <hr>
+      <h4>Contact Us</h4>
+      <pref>Contact us through<br>
+          FAX: +91 261-2227294<br>
+          Mobile: +91 6355-984026<br>
+          Mail: skhotels@gmail.com</pref>
+      <div class="icons">
+          <i class="fa fa-facebook"></i>&emsp;&emsp;
+          <i class="fa fa-twitter"></i>&emsp;&emsp;
+          <i class="fa fa-instagram"></i>&emsp;&emsp;
+          <i class="fa fa-linkedin"></i>
+      </div>
+  </section>
+
+  
+    
+    <script>
+        function ScrollToMenu() {
+            var menu = document.querySelector('.menu');
+            menu.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function BackToTop() {
+            var header = document.querySelector('.sub-header');
+            header.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+            document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+        }
+            
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft= "0";
+            document.body.style.backgroundColor = "white";
+        }
+        function validateForm() {
+            var password = document.getElementById('password').value;
+
+            if (password === '') {
+                alert('All fields are required');
+                return false;
+            } 
+            else {
+                alert("Password Changed Successfully");
+                window.location.href = 'account.html';
+                // return false;
+            }
+        
+            document.addEventListener("DOMContentLoaded", function() {
+        var specificOption = document.getElementById("specific-option");
+        specificOption.addEventListener("click", function(event) {
+            event.preventDefault();
+            alert("Logged out");
+            window.location.href="index.html";
+        });
+    });
+}
+    </script>
+    
+    </body>
+    </html>

@@ -1,0 +1,90 @@
+<html>
+<head>
+    <meta name="viewpoint" content="with=device-width, initial scale=1.0">
+    <title>S&K Hotels|Home|Sanjana</title>
+    <link rel="stylesheet" href="index_reg.css">
+    <link href="https://fonts.googleapis.com/css2? family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <table>
+        <tr>
+          <td>
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+      
+            <div id="mySidenav" class="sidenav">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+              <a href="about_reg.html">About</a>
+              <a href="contact_reg.html">Contact</a>
+              <a href="review_reg.html">Review</a>
+          </div>
+          </td>
+        <th>
+            <div class="a">
+                &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;    
+                <div class="dropdown">
+                <img class="login-image" src="no_user.avif" alt="Dropdown Image">
+                <div class="dropdown-content">
+                    <p>Welcome Sanjana</p>
+                    <hr><br>
+                    <div id="specific-option">Logout</div>
+                    <br>
+                    <a href="account.html" class="id">Manage account</a>
+            </div>
+        </div>
+        </th>
+        </tr>
+  
+      </table>
+
+    <section class="header">
+        <nav>
+            <a href="index_reg.html"><img src="logo.png"></a>
+            <div class="nav-links" id="NavLinks">
+                <ul>
+                    <li><a href="index_reg.html">Home</a></li>
+                    <li><a href="accomodation_reg.html">Accommodation</a></li>
+                    <li><a href="dining_reg.html">Dining</a></li>
+                    <li><a href="fitness_reg.html">Fitness</a></li>
+                    <li><a href="gallery_reg.html">Gallery</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <th><div class="text-box">
+            <h1>Welcome Sanjana</h1><br>
+            <p>Thank you for enrolling as a member. We trust you will derive full benefit from the amenities and services at your disposal.</p>
+            <a href="room_booking.html" class="hero-btn">Book Room Now</a>
+        </div>
+
+    </section>
+
+
+<script>
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("main").style.marginleft = "250px";
+        document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+    }
+        
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft= "0";
+        document.body.style.backgroundColor = "white";
+    }
+
+    document.addEventListener("DOMContentLoaded", function() {
+        var specificOption = document.getElementById("specific-option");
+        specificOption.addEventListener("click", function(event) {
+            event.preventDefault();
+            alert("Logged out");
+            window.location.href="index.html";
+        });
+    });
+</script>
+
+</body>
+
+</html>

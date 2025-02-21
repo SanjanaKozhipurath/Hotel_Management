@@ -1,0 +1,124 @@
+<html>
+<head>
+    <meta name="viewpoint" content="with=device-width, initial scale=1.0">
+    <title>S&K Hotels|Login</title>
+    <link rel="stylesheet" href="login.css">
+    <link href="https://fonts.googleapis.com/css2? family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <table>
+        <tr>
+          <td>
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+      
+            <div id="mySidenav" class="sidenav">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+              <a href="about.html">About</a>
+              <a href="contact.html">Contact</a>
+              <a href="review.html">Review</a>
+          </div>
+          </td>
+        <th>
+            <div class="a">
+                &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;S&K Hotels
+            </div>
+        </th>
+        </tr>
+  
+      </table>
+
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="logo.png"></a>
+            <div class="nav-links" id="NavLinks">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="accomodation.html">Accommodation</a></li>
+                    <li><a href="dining.html">Dining</a></li>
+                    <li><a href="fitness.html">Fitness</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <h1>Login</h1>
+
+    </section>
+
+    <br><br><br>
+
+    <section class="info">
+        Login to discover the world of luxury.
+    </section>
+
+<br>
+
+<form id="registrationForm" onsubmit="return validateForm()">
+  <h2>Login</h2>
+  <br>
+
+  <label for="username">Username:</label>
+  <input type="text" id="username" name="username" required>
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" required>
+
+  <label for="password">Password:</label>
+  <input type="password" id="password" name="password" required><br> <br>
+  <button type="submit" class="btn_submit" id = "submit_btn">Login</button>
+  <br><br>
+
+  <p style="text-align: right;">Don't have an account? <a href="registration.html">Register now</a></p>
+</form>
+
+<br><br><br><br><br><br><br>
+    <section class="footer">
+        <hr>
+        <h4>Contact Us</h4>
+        <pref>Contact us through<br>
+            FAX: +91 261-2227294<br>
+            Mobile: +91 6355-984026<br>
+            Mail: skhotels@gmail.com</pref>
+            <div class="icons">
+                <i class="fa fa-facebook"></i>&emsp;&emsp;
+                <i class="fa fa-twitter"></i>&emsp;&emsp;
+                <i class="fa fa-instagram"></i>&emsp;&emsp;
+                <i class="fa fa-linkedin"></i>
+            </div>
+        </section>
+
+<script>
+function validateForm() {
+    var username = document.getElementById('username').value;
+    var email = document.getElementById('email').value;
+    var password = document.getElementById('password').value;
+
+    if (username === '' || email === '' || password === '') {
+        alert('All fields are required');
+        return false;
+    } else {
+        alert("Successfully logged in!");
+        window.location.href = 'index_reg.html';
+        return false;
+    }
+}
+
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+        document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+    }
+        
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft= "0";
+        document.body.style.backgroundColor = "white";
+    }
+</script>
+
+</body>
+</html>

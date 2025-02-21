@@ -1,0 +1,162 @@
+<html>
+<head>
+    <meta name="viewpoint" content="with=device-width, initial scale=1.0">
+    <title>S&K Hotels|Room Booking</title>
+    <link rel="stylesheet" href="room.css">
+    <link href="https://fonts.googleapis.com/css2? family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <table>
+        <tr>
+          <td>
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+      
+            <div id="mySidenav" class="sidenav">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+              <a href="about_reg.html">About</a>
+              <a href="contact_reg.html">Contact</a>
+              <a href="review_reg.html">Review</a>
+          </div>
+          </td>
+        <th>
+            <div class="a">
+                &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;    
+                <div class="dropdown">
+                <img class="login-image" src="no_user.avif" alt="Dropdown Image">
+                <div class="dropdown-content">
+                    <p>Welcome Sanjana</p>
+                    <hr>
+                    <div id="specific-option">Logout</div>
+                    <br>
+                    <a href="account.html" class="id">Manage account</a>
+            </div>
+        </th>
+        </tr>
+  
+      </table>
+
+    <section class="sub-header">
+        <nav>
+            <a href="index_reg.html"><img src="logo.png"></a>
+            <div class="nav-links" id="NavLinks">
+                <ul>
+                    <li><a href="index_reg.html">Home</a></li>
+                    <li><a href="accomodation_reg.html">Accommodation</a></li>
+                    <li><a href="dining_reg.html">Dining</a></li>
+                    <li><a href="fitness_reg.html">Fitness</a></li>
+                    <li><a href="gallery_reg.html">Gallery</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <h1>Book a Room</h1>
+
+    </section>
+    <br><br>
+
+    <div class="note">
+        Money will only be cut once check-in is done
+    </div>
+
+    <form id="registrationForm" onsubmit="return validateForm()">
+        <h2>Booking</h2>
+        <br>
+        <div class="name">Name: Sanjana Kozhipurath</div><br><br>
+        <div class="email">Email: sanjanakozhipurath@gmail.com</div><br><br>
+        <div class="user">Username: Meee_04</div><br><br>
+      
+        <label for="pricing">Choose room:</label>
+        <select id="pricing" name="pricing" required>
+          <option value="">Select</option>
+          <option value="Deluxe Guest room, 1 King, City view">Deluxe Guest room, 1 King, City view -  &#8377;6879/night</option>
+          <option value="Deluxe Guest room, Doubles, City view">Deluxe Guest room, Doubles, City view -  &#8377;6879/night</option>
+          <option value="Premium, Guest room, 1 King, City view">Premium, Guest room, 1 King, City view -  &#8377;8467/night</option>
+          <option value="Premium, Guest room, 2 Twins, City view">Premium, Guest room, 2 Twins, City view -  &&#8377;8467/night</option>
+          <option Premium, Guest room, 1 King, River view="king">Premium, Guest room, 1 King, River view -  &#8377;8202/night</option>
+          <option value="Pemium, Guest room, 2 Twins, River view">Pemium, Guest room, 2 Twins, River view -  &#8377;8202/night</option>
+          <option value="Suite, Executive lounge access, Suite, 1 King, River view">Suite, Executive lounge access, Suite, 1 King, River view -  &#8377;16,140/night</option>
+          <option value="Grand Luxe Suite, Executive lounge access, Suite, 1 King, River view">Grand Luxe Suite, Executive lounge access, Suite, 1 King, River view -  &#8377;27,606/night</option>
+        </select><br><br><br>
+
+        <label for="days">Number of days:</label>
+        <input type="number" id="days" name="days" required> <br><br>
+      
+        <label for="creditCard">Credit Card Number:</label>
+        <input type="number" id="creditCard" name="creditCard" required> <br><br>
+        <label for="expiryDate">Expiry Date (MM/YYYY):</label>
+      <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YYYY" pattern="(0[1-9]|1[0-2])\/[0-9]{4}" title="Please enter a valid expiry date in MM/YYYY format" required>
+
+      <br><br>
+
+        <button type="submit" class="btn_submit" onclick="tosubmit()">Book</button>
+      </form>
+
+
+
+    <br><br><br><br><br><br><br>
+    <section class="footer">
+        <hr>
+        <h4>Contact Us</h4>
+        <pref>Contact us through<br>
+            FAX: +91 261-2227294<br>
+            Mobile: +91 6355-984026<br>
+            Mail: skhotels@gmail.com</pref>
+            <div class="icons">
+                <i class="fa fa-facebook"></i>&emsp;&emsp;
+                <i class="fa fa-twitter"></i>&emsp;&emsp;
+                <i class="fa fa-instagram"></i>&emsp;&emsp;
+                <i class="fa fa-linkedin"></i>
+            </div>
+        </section>
+    
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+            document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+        }
+            
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft= "0";
+            document.body.style.backgroundColor = "white";
+        }
+
+        function validateForm() {
+            var creditCard = document.getElementById('creditCard').value;
+            var number = document.getElementById('days').value;
+            var edate = document.getElementById('expiryDate').value;
+
+  if (edate === '' || creditCard === '' || days === '') {
+    alert('All fields are required');
+    return false;
+  }
+  else{
+    if (window.confirm('Room Successfully Booked')) {
+          window.location.href = 'index_reg.html';
+      }
+    else {
+      window.location.reload();
+    }
+    return false;
+
+  }
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+        var specificOption = document.getElementById("specific-option");
+        specificOption.addEventListener("click", function(event) {
+            event.preventDefault();
+            alert("Logged out");
+            window.location.href="index.html";
+        });
+    });
+
+    </script>
+    
+    </body>
+    
+    </html>
